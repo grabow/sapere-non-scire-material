@@ -8,7 +8,7 @@ und Urteil unter der Annahme überlegener künstlicher Intelligenz*.
 ### `demonstrationsarbeit/`
 
 > **Demonstrationsarbeit – keine Prüfungsleistung.**
-> Die Arbeit wurde vom Autor des Beitrags mit einem KI-Agenten erstellt.
+> Die Arbeit wurde im Rahmen des Beitrags mit einem KI-Agenten erstellt.
 > Sie wurde nie als Prüfungsleistung eingereicht und nicht bewertet.
 > Wer sie oder Teile davon als eigene Prüfungsleistung einreicht, täuscht.
 
