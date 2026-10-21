@@ -43,4 +43,11 @@ Es zeigt, dass der Agent eine formal vollständige Arbeit in der realen,
 
 ## Lizenz
 
-[Vor der Veröffentlichung festlegen, z. B. CC BY 4.0.]
+- Demonstrationsarbeit (`demonstrationsarbeit/demonstrationsarbeit-sap-btp.pdf`):
+  [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/deed.de).
+  Weitergabe nur unverändert, einschließlich Hinweisblatt und Vermerken.
+  Ausgenommen ist das Logo der Hochschule Offenburg.
+- Alle übrigen Inhalte:
+  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.de).
+
+Siehe auch [`LICENSE.md`](LICENSE.md).
