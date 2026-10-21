@@ -1,0 +1,7 @@
+# Ungekennzeichnete Originalausgabe nicht veröffentlichen
+demonstrationsarbeit/quelle/
+
+.DS_Store
+*.aux
+*.log
+*.out

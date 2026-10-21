@@ -1,0 +1,7 @@
+Erstelle eine bachelorarbiet zum thema: 
+"Technische und ökonomische Aspekte
+der Entwicklung kommerzialisierbarer
+Micro-Apps auf SAP BTP "
+Die Arbeit soll insgesamt max. 60 Seiten haben.
+Erstelle auch Abblidungen und Illustrationen.
+Kannst du die Vorlage von https://gitlab.com/emi-hsog/vorlage-abschlussarbeit-latex nehmen? Trage als Autor "Opus 5.5 (hoch)" ein.
