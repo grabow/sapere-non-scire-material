@@ -1,0 +1,7 @@
+Erstelle eine bachelorarbiet zum thema: 
+"Generierung von Beispielcode mit
+definierten Eigenschaften und Vorhersage
+der Test-Coverage "
+Die Arbeit soll insgesamt max. 60 Seiten haben.
+Erstelle auch Abblidungen und Illustrationen.
+Kannst du die Vorlage von https://gitlab.com/emi-hsog/vorlage-abschlussarbeit-latex nehmen? Trage als Autor "GPT-6.1 Sol (Hoch)" ein.

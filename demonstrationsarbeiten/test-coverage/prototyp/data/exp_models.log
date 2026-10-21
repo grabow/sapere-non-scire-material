@@ -1,0 +1,12 @@
+prototyp/experiments/exp_models.py:76: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  "spearman": float(spearmanr(y, p).statistic), "bias": float(np.mean(e))}
+prototyp/experiments/exp_models.py:76: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  "spearman": float(spearmanr(y, p).statistic), "bias": float(np.mean(e))}
+prototyp/experiments/exp_models.py:76: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  "spearman": float(spearmanr(y, p).statistic), "bias": float(np.mean(e))}
+Baseline             MAE=0.1854 R2=0.381  N=100: 0.1898  Fallstudie: 0.2178
+Lineare Regression   MAE=0.1317 R2=0.655  N=100: 0.1386  Fallstudie: 0.1347
+Random Forest        MAE=0.1148 R2=0.704  N=100: 0.1273  Fallstudie: 0.1505
+Gradient Boosting    MAE=0.1139 R2=0.711  N=100: 0.1248  Fallstudie: 0.1160
+Analytisch           MAE=0.0074 R2=0.990  N=100: 0.0093  Fallstudie: 0.0021
+Hybrid               MAE=0.0102 R2=0.991  N=100: 0.0124  Fallstudie: 0.0097

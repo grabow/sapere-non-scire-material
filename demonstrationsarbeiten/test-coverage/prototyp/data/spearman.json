@@ -1,0 +1,18 @@
+{
+ "Gleichheitsbed.": -0.5625194311439358,
+ "Zweige": -0.5012219165896084,
+ "V(G)": -0.4989578260131968,
+ "LOC": -0.4950708406250078,
+ "Anteil Gleichheit": -0.4933398680865793,
+ "mittl. Entscheidungstiefe": -0.4917015212130895,
+ "Schachtelungstiefe": -0.47106862069420263,
+ "vorzeitige returns": -0.4134350479980545,
+ "bool. Operatoren": -0.2924296185430333,
+ "Modulo-Bed.": -0.25740346578391593,
+ "and": -0.24172772571396248,
+ "Vergleiche zweier Var.": -0.23204233477380468,
+ "or": -0.22479202169179743,
+ "Parameter": -0.1335774667510127,
+ "log Eingabebereich": -0.13125693111681386,
+ "Schleifen": 0.05775207290515027
+}

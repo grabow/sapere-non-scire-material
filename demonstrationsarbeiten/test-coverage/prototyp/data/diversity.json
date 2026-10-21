@@ -1,0 +1,92 @@
+{
+ "klein": {
+  "spec": {
+   "n_params": 2,
+   "cc": 4,
+   "max_depth": 2,
+   "n_loops": 1,
+   "domain": 100,
+   "p_eq": 0.15,
+   "p_mod": 0.1,
+   "p_rel2": 0.15,
+   "p_compound": 0.2,
+   "p_elif": 0.2,
+   "p_else": 0.5,
+   "p_return": 0.15,
+   "min_stmts": 1,
+   "max_stmts": 2,
+   "loop_kinds": [
+    "for_const",
+    "for_mod",
+    "while"
+   ],
+   "seed": 0
+  },
+  "unique_sources": 1000,
+  "unique_skeletons": 1000,
+  "unique_control": 26,
+  "loc_mean": 14.787,
+  "loc_min": 8,
+  "loc_max": 22
+ },
+ "mittel": {
+  "spec": {
+   "n_params": 2,
+   "cc": 10,
+   "max_depth": 3,
+   "n_loops": 2,
+   "domain": 100,
+   "p_eq": 0.15,
+   "p_mod": 0.1,
+   "p_rel2": 0.15,
+   "p_compound": 0.2,
+   "p_elif": 0.2,
+   "p_else": 0.5,
+   "p_return": 0.15,
+   "min_stmts": 1,
+   "max_stmts": 2,
+   "loop_kinds": [
+    "for_const",
+    "for_mod",
+    "while"
+   ],
+   "seed": 0
+  },
+  "unique_sources": 1000,
+  "unique_skeletons": 1000,
+  "unique_control": 1000,
+  "loc_mean": 32.584,
+  "loc_min": 19,
+  "loc_max": 49
+ },
+ "gro\u00df": {
+  "spec": {
+   "n_params": 3,
+   "cc": 20,
+   "max_depth": 5,
+   "n_loops": 3,
+   "domain": 100,
+   "p_eq": 0.15,
+   "p_mod": 0.1,
+   "p_rel2": 0.15,
+   "p_compound": 0.2,
+   "p_elif": 0.2,
+   "p_else": 0.5,
+   "p_return": 0.15,
+   "min_stmts": 1,
+   "max_stmts": 2,
+   "loop_kinds": [
+    "for_const",
+    "for_mod",
+    "while"
+   ],
+   "seed": 0
+  },
+  "unique_sources": 1000,
+  "unique_skeletons": 1000,
+  "unique_control": 1000,
+  "loc_mean": 63.063,
+  "loc_min": 40,
+  "loc_max": 88
+ }
+}

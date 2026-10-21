@@ -1,0 +1,870 @@
+[
+ {
+  "name": "triangle",
+  "source": "def triangle(a, b, c):\n    if a <= 0 or b <= 0 or c <= 0:\n        return 0\n    if a + b <= c or a + c <= b or b + c <= a:\n        return 0\n    if a == b and b == c:\n        return 3\n    if a == b or b == c or a == c:\n        return 2\n    return 1",
+  "domains": {
+   "a": [
+    0,
+    15
+   ],
+   "b": [
+    0,
+    15
+   ],
+   "c": [
+    0,
+    15
+   ]
+  },
+  "metrics": {
+   "n_params": 3,
+   "cc": 12,
+   "max_depth": 1,
+   "n_loops": 0,
+   "n_for": 0,
+   "n_while": 0,
+   "n_if": 4,
+   "n_elif": 0,
+   "n_else": 0,
+   "n_boolops": 7,
+   "n_and": 1,
+   "n_or": 6,
+   "n_branches": 8,
+   "loc": 10,
+   "n_stmts": 9,
+   "n_locals": 0,
+   "n_return_early": 4,
+   "n_cond_rel": 3,
+   "n_cond_eq": 5,
+   "n_cond_mod": 0,
+   "n_cond_rel2": 3,
+   "frac_eq": 0.45454545454545453,
+   "frac_mod": 0.0,
+   "frac_rel2": 0.2727272727272727,
+   "mean_decision_depth": 1.0,
+   "n_consts": 8
+  },
+  "domain_equiv": 7.5,
+  "measured": [
+   0.3305,
+   0.4956124999999999,
+   0.7122187499999999,
+   0.8175625,
+   0.8697500000000001,
+   0.8971875,
+   0.9162500000000001,
+   0.9437499999999999,
+   0.98125,
+   0.99375
+  ],
+  "analytic": [
+   0.3390114834830106,
+   0.5053479146941411,
+   0.7113094379484192,
+   0.8068262070962783,
+   0.8583798071196991,
+   0.8877561242008905,
+   0.9014393014254816,
+   0.9223059313283329,
+   0.9619280934347947,
+   0.9884042394439223
+  ],
+  "t_est": 0.001689624972641468
+ },
+ {
+  "name": "leap_year",
+  "source": "def leap_year(y):\n    if y % 400 == 0:\n        return True\n    if y % 100 == 0:\n        return False\n    if y % 4 == 0:\n        return True\n    return False",
+  "domains": {
+   "y": [
+    1,
+    3000
+   ]
+  },
+  "metrics": {
+   "n_params": 1,
+   "cc": 4,
+   "max_depth": 1,
+   "n_loops": 0,
+   "n_for": 0,
+   "n_while": 0,
+   "n_if": 3,
+   "n_elif": 0,
+   "n_else": 0,
+   "n_boolops": 0,
+   "n_and": 0,
+   "n_or": 0,
+   "n_branches": 6,
+   "loc": 8,
+   "n_stmts": 7,
+   "n_locals": 0,
+   "n_return_early": 3,
+   "n_cond_rel": 0,
+   "n_cond_eq": 0,
+   "n_cond_mod": 3,
+   "n_cond_rel2": 0,
+   "frac_eq": 0.0,
+   "frac_mod": 1.0,
+   "frac_rel2": 0.0,
+   "mean_decision_depth": 1.0,
+   "n_consts": 10
+  },
+  "domain_equiv": 1499.5,
+  "measured": [
+   0.49787499999999996,
+   0.5639,
+   0.633375,
+   0.6739166666666666,
+   0.6981666666666666,
+   0.7429166666666666,
+   0.8016666666666667,
+   0.8733333333333334,
+   0.9541666666666666,
+   0.9916666666666668
+  ],
+  "analytic": [
+   0.49794444444444447,
+   0.5632883888888887,
+   0.6324722155858752,
+   0.6721458386522382,
+   0.6973627397004108,
+   0.7382764542907196,
+   0.7908562617797473,
+   0.8597848267312248,
+   0.9446168110143289,
+   0.9838062524088871
+  ],
+  "t_est": 0.000604208093136549
+ },
+ {
+  "name": "days_in_month",
+  "source": "def days_in_month(m, y):\n    if m < 1 or m > 12:\n        return -1\n    if m == 2:\n        if y % 4 == 0 and (y % 100 != 0 or y % 400 == 0):\n            return 29\n        return 28\n    if m == 4 or m == 6 or m == 9 or m == 11:\n        return 30\n    return 31",
+  "domains": {
+   "m": [
+    0,
+    13
+   ],
+   "y": [
+    1900,
+    2100
+   ]
+  },
+  "metrics": {
+   "n_params": 2,
+   "cc": 11,
+   "max_depth": 2,
+   "n_loops": 0,
+   "n_for": 0,
+   "n_while": 0,
+   "n_if": 4,
+   "n_elif": 0,
+   "n_else": 0,
+   "n_boolops": 6,
+   "n_and": 1,
+   "n_or": 5,
+   "n_branches": 8,
+   "loc": 10,
+   "n_stmts": 9,
+   "n_locals": 0,
+   "n_return_early": 4,
+   "n_cond_rel": 2,
+   "n_cond_eq": 5,
+   "n_cond_mod": 3,
+   "n_cond_rel2": 0,
+   "frac_eq": 0.5,
+   "frac_mod": 0.3,
+   "frac_rel2": 0.0,
+   "mean_decision_depth": 1.25,
+   "n_consts": 18
+  },
+  "domain_equiv": 53.25,
+  "measured": [
+   0.33912500000000007,
+   0.46382499999999993,
+   0.6195625,
+   0.7339999999999999,
+   0.8397500000000001,
+   0.9396875,
+   0.9818750000000002,
+   0.9974999999999999,
+   1.0,
+   1.0
+  ],
+  "analytic": [
+   0.33928571428571436,
+   0.46452085698020207,
+   0.6194748073855558,
+   0.7326236721516659,
+   0.8365894975987511,
+   0.9371524748809771,
+   0.977861722316514,
+   0.9962731427887555,
+   0.999980838421333,
+   0.9999999970626713
+  ],
+  "t_est": 0.0008929170435294509
+ },
+ {
+  "name": "grade",
+  "source": "def grade(points):\n    if points < 0 or points > 100:\n        return -1\n    if points >= 90:\n        return 1\n    elif points >= 80:\n        return 2\n    elif points >= 65:\n        return 3\n    elif points >= 50:\n        return 4\n    return 5",
+  "domains": {
+   "points": [
+    -10,
+    110
+   ]
+  },
+  "metrics": {
+   "n_params": 1,
+   "cc": 7,
+   "max_depth": 1,
+   "n_loops": 0,
+   "n_for": 0,
+   "n_while": 0,
+   "n_if": 5,
+   "n_elif": 3,
+   "n_else": 0,
+   "n_boolops": 1,
+   "n_and": 0,
+   "n_or": 1,
+   "n_branches": 10,
+   "loc": 12,
+   "n_stmts": 11,
+   "n_locals": 0,
+   "n_return_early": 5,
+   "n_cond_rel": 6,
+   "n_cond_eq": 0,
+   "n_cond_mod": 0,
+   "n_cond_rel2": 0,
+   "frac_eq": 0.0,
+   "frac_mod": 0.0,
+   "frac_rel2": 0.0,
+   "mean_decision_depth": 1.0,
+   "n_consts": 12
+  },
+  "domain_equiv": 60.0,
+  "measured": [
+   0.3761,
+   0.5313,
+   0.71945,
+   0.8504499999999998,
+   0.9527999999999999,
+   0.9975000000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "analytic": [
+   0.37768595041322345,
+   0.5334130182364594,
+   0.7195830303051918,
+   0.8490492893818462,
+   0.950451369411917,
+   0.9975295682685703,
+   0.9999744472099487,
+   0.99999999625526,
+   1.0,
+   1.0
+  ],
+  "t_est": 0.0005615000845864415
+ },
+ {
+  "name": "fizzbuzz",
+  "source": "def fizzbuzz(n):\n    if n % 15 == 0:\n        return 3\n    elif n % 5 == 0:\n        return 2\n    elif n % 3 == 0:\n        return 1\n    return 0",
+  "domains": {
+   "n": [
+    1,
+    100
+   ]
+  },
+  "metrics": {
+   "n_params": 1,
+   "cc": 4,
+   "max_depth": 1,
+   "n_loops": 0,
+   "n_for": 0,
+   "n_while": 0,
+   "n_if": 3,
+   "n_elif": 2,
+   "n_else": 0,
+   "n_boolops": 0,
+   "n_and": 0,
+   "n_or": 0,
+   "n_branches": 6,
+   "loc": 8,
+   "n_stmts": 7,
+   "n_locals": 0,
+   "n_return_early": 3,
+   "n_cond_rel": 0,
+   "n_cond_eq": 0,
+   "n_cond_mod": 3,
+   "n_cond_rel2": 0,
+   "frac_eq": 0.0,
+   "frac_mod": 1.0,
+   "frac_rel2": 0.0,
+   "mean_decision_depth": 1.0,
+   "n_consts": 10
+  },
+  "domain_equiv": 49.5,
+  "measured": [
+   0.4564666666666667,
+   0.5966666666666667,
+   0.7620833333333332,
+   0.8663333333333332,
+   0.9435,
+   0.9929166666666667,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "analytic": [
+   0.4566666666666666,
+   0.5965666666666666,
+   0.7608510870666666,
+   0.8660968258328453,
+   0.943178689101018,
+   0.9923563895073425,
+   0.9996574739152752,
+   0.9999992962482663,
+   0.9999999999999939,
+   1.0
+  ],
+  "t_est": 0.0003949170932173729
+ },
+ {
+  "name": "gcd",
+  "source": "def gcd(a, b):\n    if a < 0:\n        a = -a\n    if b < 0:\n        b = -b\n    while b != 0:\n        a, b = b, a % b\n    return a",
+  "domains": {
+   "a": [
+    -100,
+    100
+   ],
+   "b": [
+    -100,
+    100
+   ]
+  },
+  "metrics": {
+   "n_params": 2,
+   "cc": 4,
+   "max_depth": 1,
+   "n_loops": 1,
+   "n_for": 0,
+   "n_while": 1,
+   "n_if": 2,
+   "n_elif": 0,
+   "n_else": 0,
+   "n_boolops": 0,
+   "n_and": 0,
+   "n_or": 0,
+   "n_branches": 6,
+   "loc": 8,
+   "n_stmts": 7,
+   "n_locals": 2,
+   "n_return_early": 0,
+   "n_cond_rel": 2,
+   "n_cond_eq": 1,
+   "n_cond_mod": 0,
+   "n_cond_rel2": 0,
+   "frac_eq": 0.3333333333333333,
+   "frac_mod": 0.0,
+   "frac_rel2": 0.0,
+   "mean_decision_depth": 1.0,
+   "n_consts": 3
+  },
+  "domain_equiv": 100.0,
+  "measured": [
+   0.6659250000000002,
+   0.8310500000000001,
+   0.9789166666666664,
+   0.9995,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "analytic": [
+   0.6658374792703151,
+   0.8333250827124741,
+   0.9791615099643035,
+   0.9993482330973459,
+   0.9999993612252408,
+   0.9999999999999994,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "t_est": 0.014464125037193298
+ },
+ {
+  "name": "is_prime",
+  "source": "def is_prime(n):\n    if n < 2:\n        return False\n    for d in range(2, 15):\n        if d * d > n:\n            return True\n        if n % d == 0:\n            return False\n    return True",
+  "domains": {
+   "n": [
+    0,
+    200
+   ]
+  },
+  "metrics": {
+   "n_params": 1,
+   "cc": 5,
+   "max_depth": 2,
+   "n_loops": 1,
+   "n_for": 1,
+   "n_while": 0,
+   "n_if": 3,
+   "n_elif": 0,
+   "n_else": 0,
+   "n_boolops": 0,
+   "n_and": 0,
+   "n_or": 0,
+   "n_branches": 8,
+   "loc": 9,
+   "n_stmts": 8,
+   "n_locals": 0,
+   "n_return_early": 3,
+   "n_cond_rel": 1,
+   "n_cond_eq": 0,
+   "n_cond_mod": 1,
+   "n_cond_rel2": 1,
+   "frac_eq": 0.0,
+   "frac_mod": 0.3333333333333333,
+   "frac_rel2": 0.3333333333333333,
+   "mean_decision_depth": 1.5,
+   "n_consts": 8
+  },
+  "domain_equiv": 100.0,
+  "measured": [
+   0.5555000000000001,
+   0.63635,
+   0.7194687499999999,
+   0.7615625000000001,
+   0.7940000000000002,
+   0.8490625000000002,
+   0.9031249999999998,
+   0.95625,
+   0.996875,
+   1.0
+  ],
+  "analytic": [
+   0.5559701492537319,
+   0.6386599341600453,
+   0.7213351749592274,
+   0.763067827564245,
+   0.7944241897276263,
+   0.8483674272606296,
+   0.9080309061286154,
+   0.9661667430916197,
+   0.9983155834367672,
+   0.999988650963366
+  ],
+  "t_est": 0.002347417059354484
+ },
+ {
+  "name": "quadrant",
+  "source": "def quadrant(x, y):\n    if x == 0 or y == 0:\n        return 0\n    if x > 0:\n        if y > 0:\n            return 1\n        return 4\n    if y > 0:\n        return 2\n    return 3",
+  "domains": {
+   "x": [
+    -10,
+    10
+   ],
+   "y": [
+    -10,
+    10
+   ]
+  },
+  "metrics": {
+   "n_params": 2,
+   "cc": 6,
+   "max_depth": 2,
+   "n_loops": 0,
+   "n_for": 0,
+   "n_while": 0,
+   "n_if": 4,
+   "n_elif": 0,
+   "n_else": 0,
+   "n_boolops": 1,
+   "n_and": 0,
+   "n_or": 1,
+   "n_branches": 8,
+   "loc": 10,
+   "n_stmts": 9,
+   "n_locals": 0,
+   "n_return_early": 4,
+   "n_cond_rel": 3,
+   "n_cond_eq": 2,
+   "n_cond_mod": 0,
+   "n_cond_rel2": 0,
+   "frac_eq": 0.4,
+   "frac_mod": 0.0,
+   "frac_rel2": 0.0,
+   "mean_decision_depth": 1.25,
+   "n_consts": 10
+  },
+  "domain_equiv": 10.0,
+  "measured": [
+   0.35219999999999996,
+   0.5208999999999999,
+   0.7728125000000001,
+   0.9135625,
+   0.9797499999999999,
+   0.9990625000000002,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "analytic": [
+   0.3517573696145125,
+   0.522468133133828,
+   0.7728617674114545,
+   0.9140892223120752,
+   0.979323531262731,
+   0.9990481363049839,
+   0.9999927714630913,
+   0.9999999995819864,
+   1.0,
+   1.0
+  ],
+  "t_est": 0.0006878750864416361
+ },
+ {
+  "name": "ticket_price",
+  "source": "def ticket_price(age, weekday, student):\n    price = 12\n    if age < 6:\n        return 0\n    if age < 18 or student == 1:\n        price = price - 4\n    elif age >= 65:\n        price = price - 3\n    if weekday == 2:\n        price = price - 2\n    if weekday >= 5 and age >= 18:\n        price = price + 2\n    return price",
+  "domains": {
+   "age": [
+    0,
+    100
+   ],
+   "weekday": [
+    0,
+    6
+   ],
+   "student": [
+    0,
+    1
+   ]
+  },
+  "metrics": {
+   "n_params": 3,
+   "cc": 8,
+   "max_depth": 1,
+   "n_loops": 0,
+   "n_for": 0,
+   "n_while": 0,
+   "n_if": 5,
+   "n_elif": 1,
+   "n_else": 0,
+   "n_boolops": 2,
+   "n_and": 1,
+   "n_or": 1,
+   "n_branches": 10,
+   "loc": 13,
+   "n_stmts": 12,
+   "n_locals": 1,
+   "n_return_early": 1,
+   "n_cond_rel": 5,
+   "n_cond_eq": 2,
+   "n_cond_mod": 0,
+   "n_cond_rel2": 0,
+   "frac_eq": 0.2857142857142857,
+   "frac_mod": 0.0,
+   "frac_rel2": 0.0,
+   "mean_decision_depth": 1.0,
+   "n_consts": 13
+  },
+  "domain_equiv": 17.833333333333332,
+  "measured": [
+   0.42249,
+   0.5792400000000001,
+   0.7737750000000001,
+   0.8906000000000001,
+   0.9609999999999997,
+   0.9939999999999998,
+   0.9995,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "analytic": [
+   0.42326732673267325,
+   0.5820452276587529,
+   0.7778154747789947,
+   0.8936123313840879,
+   0.9620903201129213,
+   0.9952420937555398,
+   0.9997810569964335,
+   0.999999520877763,
+   0.999999999999995,
+   1.0
+  ],
+  "t_est": 0.0011607500491663814
+ },
+ {
+  "name": "tax_class",
+  "source": "def tax_class(income):\n    if income <= 11000:\n        return 0\n    elif income <= 30000:\n        return 1\n    elif income <= 60000:\n        return 2\n    elif income <= 250000:\n        return 3\n    return 4",
+  "domains": {
+   "income": [
+    0,
+    300000
+   ]
+  },
+  "metrics": {
+   "n_params": 1,
+   "cc": 5,
+   "max_depth": 1,
+   "n_loops": 0,
+   "n_for": 0,
+   "n_while": 0,
+   "n_if": 4,
+   "n_elif": 3,
+   "n_else": 0,
+   "n_boolops": 0,
+   "n_and": 0,
+   "n_or": 0,
+   "n_branches": 8,
+   "loc": 10,
+   "n_stmts": 9,
+   "n_locals": 0,
+   "n_return_early": 4,
+   "n_cond_rel": 4,
+   "n_cond_eq": 0,
+   "n_cond_mod": 0,
+   "n_cond_rel2": 0,
+   "frac_eq": 0.0,
+   "frac_mod": 0.0,
+   "frac_rel2": 0.0,
+   "mean_decision_depth": 1.0,
+   "n_consts": 9
+  },
+  "domain_equiv": 150000.0,
+  "measured": [
+   0.45771249999999997,
+   0.5628374999999999,
+   0.681625,
+   0.7863125,
+   0.887875,
+   0.9765625,
+   0.994375,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "analytic": [
+   0.45791555694814323,
+   0.5630514907626427,
+   0.6812593120726809,
+   0.7852116230416772,
+   0.8885534404773878,
+   0.975292896833507,
+   0.9968351883095158,
+   0.9999286293144158,
+   0.9999999990351038,
+   1.0
+  ],
+  "t_est": 0.03045900003053248
+ },
+ {
+  "name": "collatz_steps",
+  "source": "def collatz_steps(n):\n    steps = 0\n    while n != 1 and steps < 20:\n        if n % 2 == 0:\n            n = n // 2\n        else:\n            n = 3 * n + 1\n        steps = steps + 1\n    return steps",
+  "domains": {
+   "n": [
+    1,
+    50
+   ]
+  },
+  "metrics": {
+   "n_params": 1,
+   "cc": 4,
+   "max_depth": 2,
+   "n_loops": 1,
+   "n_for": 0,
+   "n_while": 1,
+   "n_if": 1,
+   "n_elif": 0,
+   "n_else": 1,
+   "n_boolops": 1,
+   "n_and": 1,
+   "n_or": 0,
+   "n_branches": 4,
+   "loc": 9,
+   "n_stmts": 7,
+   "n_locals": 2,
+   "n_return_early": 0,
+   "n_cond_rel": 1,
+   "n_cond_eq": 1,
+   "n_cond_mod": 1,
+   "n_cond_rel2": 0,
+   "frac_eq": 0.3333333333333333,
+   "frac_mod": 0.3333333333333333,
+   "frac_rel2": 0.0,
+   "mean_decision_depth": 1.5,
+   "n_consts": 9
+  },
+  "domain_equiv": 24.5,
+  "measured": [
+   0.959475,
+   0.9964749999999999,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "analytic": [
+   0.9924278296641644,
+   0.9998735357590538,
+   0.999999999171177,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "t_est": 0.0054659160086885095
+ },
+ {
+  "name": "max3",
+  "source": "def max3(a, b, c):\n    m = a\n    if b > m:\n        m = b\n    if c > m:\n        m = c\n    return m",
+  "domains": {
+   "a": [
+    -100,
+    100
+   ],
+   "b": [
+    -100,
+    100
+   ],
+   "c": [
+    -100,
+    100
+   ]
+  },
+  "metrics": {
+   "n_params": 3,
+   "cc": 3,
+   "max_depth": 1,
+   "n_loops": 0,
+   "n_for": 0,
+   "n_while": 0,
+   "n_if": 2,
+   "n_elif": 0,
+   "n_else": 0,
+   "n_boolops": 0,
+   "n_and": 0,
+   "n_or": 0,
+   "n_branches": 4,
+   "loc": 7,
+   "n_stmts": 6,
+   "n_locals": 1,
+   "n_return_early": 0,
+   "n_cond_rel": 0,
+   "n_cond_eq": 0,
+   "n_cond_mod": 0,
+   "n_cond_rel2": 2,
+   "frac_eq": 0.0,
+   "frac_mod": 0.0,
+   "frac_rel2": 1.0,
+   "mean_decision_depth": 1.0,
+   "n_consts": 0
+  },
+  "domain_equiv": 100.0,
+  "measured": [
+   0.5,
+   0.73535,
+   0.9506875000000001,
+   0.9949999999999999,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "analytic": [
+   0.5,
+   0.7356910272524865,
+   0.9498404931815941,
+   0.995007629581098,
+   0.9999185346614764,
+   0.9999999995278088,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "t_est": 0.0006690409500151873
+ },
+ {
+  "name": "digit_sum",
+  "source": "def digit_sum(n):\n    if n < 0:\n        n = -n\n    s = 0\n    while n > 0:\n        s = s + n % 10\n        n = n // 10\n    return s",
+  "domains": {
+   "n": [
+    -9999,
+    9999
+   ]
+  },
+  "metrics": {
+   "n_params": 1,
+   "cc": 3,
+   "max_depth": 1,
+   "n_loops": 1,
+   "n_for": 0,
+   "n_while": 1,
+   "n_if": 1,
+   "n_elif": 0,
+   "n_else": 0,
+   "n_boolops": 0,
+   "n_and": 0,
+   "n_or": 0,
+   "n_branches": 4,
+   "loc": 8,
+   "n_stmts": 7,
+   "n_locals": 2,
+   "n_return_early": 0,
+   "n_cond_rel": 2,
+   "n_cond_eq": 0,
+   "n_cond_mod": 0,
+   "n_cond_rel2": 0,
+   "frac_eq": 0.0,
+   "frac_mod": 0.0,
+   "frac_rel2": 0.0,
+   "mean_decision_depth": 1.0,
+   "n_consts": 5
+  },
+  "domain_equiv": 9999.0,
+  "measured": [
+   0.7499874999999999,
+   0.8736999999999998,
+   0.98525,
+   0.999625,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "analytic": [
+   0.7499874993749688,
+   0.8749999990624062,
+   0.9843749996093359,
+   0.9995117186950628,
+   0.9999995231626153,
+   0.9999999999999996,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "t_est": 0.0022367500932887197
+ }
+]

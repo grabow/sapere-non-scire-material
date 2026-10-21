@@ -1,7 +1,11 @@
-# Ungekennzeichnete Originalausgabe nicht veröffentlichen
-demonstrationsarbeit/quelle/
+# Ungekennzeichnete Originalausgaben nicht veröffentlichen
+demonstrationsarbeiten/*/quelle/
+
+# LaTeX-Hilfsdateien der Kennzeichnung
+demonstrationsarbeiten/*/kennzeichnung.aux
+demonstrationsarbeiten/*/kennzeichnung.log
+demonstrationsarbeiten/*/kennzeichnung.out
 
 .DS_Store
-*.aux
-*.log
-*.out
+__pycache__/
+.venv/

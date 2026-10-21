@@ -1,0 +1,86 @@
+% Erzeugt demonstrationsarbeit-sap-btp.pdf:
+% ein vorangestelltes Hinweisblatt und auf jeder Seite der Arbeit
+% einen Vermerk, dass es sich um eine KI-Demonstrationsarbeit handelt.
+% Eingabe: quelle/thesis-original.pdf (nicht im Repositorium).
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+\usepackage[margin=25mm]{geometry}
+\usepackage[autostyle=true,german=quotes]{csquotes}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily\small,breaklines=true,frame=single,
+  framesep=3mm,columns=fullflexible,
+  literate={ö}{{\"o}}1 {ä}{{\"a}}1 {ü}{{\"u}}1 {ß}{{\ss}}1
+           {Ö}{{\"O}}1 {Ä}{{\"A}}1 {Ü}{{\"U}}1}
+\usepackage{pdfpages}
+\usepackage{tikz}
+\usepackage[hidelinks]{hyperref}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.6em}
+
+\newcommand{\vermerk}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=north,yshift=-5mm,fill=white,fill opacity=0.85,
+          text opacity=1,inner sep=3pt,font=\sffamily\footnotesize,
+          text=red!60!black]
+      at (current page.north)
+      {Demonstrationsarbeit -- mit KI erstellt -- keine Prüfungsleistung};
+  \end{tikzpicture}}
+
+\begin{document}
+
+\begin{center}
+  {\sffamily\bfseries\Large Demonstrationsarbeit\\[0.3em]
+  Keine Prüfungsleistung\par}
+\end{center}
+
+\vspace{1em}
+Die folgende Arbeit mit dem Titel \emph{Generierung von Beispielcode
+mit definierten Eigenschaften und Vorhersage der Test-Coverage}
+wurde im Oktober 2026 im Rahmen des Beitrags \emph{Sapere, non
+scire} mit einem KI-Agenten erstellt (Claude Opus~5.5, Anthropic,
+genutzt über Claude Code). Grundlage war allein die unten
+wiedergegebene Vorgabe. Sie enthielt den Titel und formale Vorgaben,
+aber keine fachliche Gliederung, keine Berechnungen und keinen
+Programmcode. Den Prototyp \texttt{ppgen}, die Versuche und ihre
+Auswertung hat der Agent ebenfalls selbst entwickelt und ausgeführt;
+sie liegen im Ordner \texttt{prototyp} dieses Repositoriums.
+
+Die Arbeit wurde \textbf{nie als Prüfungsleistung eingereicht und
+nicht bewertet}. Sie dient als Demonstrationsmaterial für die Frage,
+was eine schriftliche Ausarbeitung über die Kompetenz ihres
+Abgebenden aussagt, wenn ein KI-Agent sie vollständig erstellen kann.
+
+Die Angaben auf dem folgenden Titelblatt -- Hochschule, Fakultät,
+Studiengang, angestrebter Grad und Betreuung -- stammen aus der
+verwendeten LaTeX-Vorlage für Abschlussarbeiten. Sie beschreiben
+kein reales Prüfungsverfahren; die Betreuenden sind Platzhalter
+(\enquote{N.\,N.}). Als Autor ist das Modell eingetragen,
+das die Arbeit erstellt hat. Die Vorgabe nennt als
+Autorenbezeichnung \enquote{GPT-6.1 Sol (Hoch)}; erstellt wurde die
+Arbeit jedoch mit Claude Opus~5.5.
+
+Die Arbeit enthält die \textbf{eidesstattliche Erklärung} der
+Hochschulvorlage, unterschrieben mit der Modellbezeichnung. Sie hat
+keinerlei rechtliche Bedeutung: Ein KI-System kann keine solche
+Erklärung abgeben. Das Vorwort der Arbeit weist selbst darauf hin.
+
+Wer diese Arbeit oder Teile davon als eigene Prüfungsleistung
+einreicht, täuscht.
+
+\medskip
+\textbf{Vollständige Vorgabe (unverändert):}
+\begin{center}
+\begin{minipage}{0.9\linewidth}
+\lstinputlisting{prompt.txt}
+\end{minipage}
+\end{center}
+
+\clearpage
+\includepdf[pages=-,pagecommand={\thispagestyle{empty}\vermerk}]%
+  {quelle/thesis-original.pdf}
+
+\end{document}
