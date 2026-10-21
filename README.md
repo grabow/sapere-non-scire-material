@@ -29,6 +29,10 @@ Studiengang, angestrebter Grad, Betreuung) stammen aus der verwendeten
 LaTeX-Vorlage für Abschlussarbeiten und beschreiben kein reales
 Prüfungsverfahren. Die Betreuenden sind Platzhalter („N. N.“).
 
+Das Titelblatt der Hochschulvorlage wurde bewusst unverändert gelassen.
+Es zeigt, dass der Agent eine formal vollständige Arbeit in der realen,
+öffentlich verfügbaren Vorlage erzeugt hat.
+
 ### `sortiergespraech/`
 
 - `sortieralgorithmen-konversation-ascii.txt` – Transkript eines Gesprächs
